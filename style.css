@@ -1,0 +1,390 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 55px;
+
+}
+
+
+button{
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+}
+
+
+
+a[data-tool-tip]{
+    position: relative;
+}
+
+a[data-tool-tip]::after{
+    content: "Such A Cool Name By The Way";
+    
+    color:red;
+    font-size: 1.2rem;
+    transform: scale(0);
+    position:absolute;
+    display: block;
+    background-color: grey;
+    padding: 1em 3em;
+    border-radius: 12px;
+    white-space: nowrap;
+    bottom: 0%;
+    left: 0%;
+    /* top: 0%; */
+    /* right: 0%; */
+}
+
+a[data-tool-tip]:hover::after{
+    transform:scale(1);
+   transition: transform ease-in 900ms,
+               bottom ease-in 900ms;
+   bottom: 100%;
+}
+/* *********************************************************************** */
+
+.diwrap {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.di{
+
+    width: 0px;
+    height: 0px;
+    /* background-color: red; */
+    border-left: 125px solid transparent;
+    border-right: 125px solid transparent;
+    border-bottom: 100px solid;
+    position: absolute;
+
+}
+
+.di1{
+    top: 0px;
+    border-bottom-color: blue;
+    z-index: 0;
+}
+.di2{
+    top: -50px;
+    border-bottom-color: rgb(255, 0, 204);
+    z-index: 1;
+
+}
+.di3{
+    top: -100px;
+    border-bottom-color: rgb(3, 255, 83);
+    z-index: 2;
+}
+/* ************************************************ */
+
+.diwrap2{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.dib1{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #998235;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.dib2{
+    width: 300px;
+    height: 200px;
+    background-color: black ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.dibl{
+    height: 30px;
+    width: 400px;
+    background-color: #F3AC3C;
+   
+}
+.dib3 {
+
+
+}
+.dib4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+dib5{
+
+}
+
+.trimmer {
+    height: 300px;
+    min-width: 400px;
+    border-radius: 50%;
+    border: solid 25px black;
+    z-index: 10;
+}
+
+
+/* ************************************************** */
+
+.diwrap3 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.sq-out {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+width: 300px;
+height: 300px;
+position: relative;
+
+}
+.ci-in{
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.ci-out {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+    border-radius: 50%;
+}
+.sq-in {
+    width: 150px;
+    height: 150px;
+    /* align-self: flex-start; */
+    /* justify-self: start; */
+    z-index: 2;
+    background-color: black;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+}
+.rec-in { 
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.rec-in1 {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+}
+
+.rec-in2 {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+}
+/* *************************************************************** */
+
+.wraper-all-cen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wraper-all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.wraper-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    width: 300px;
+    height: 300px;
+    transform: translateX(-50%);
+    flex: 1 1 0;
+}
+
+.in{
+    position: absolute;
+}
+
+.in-cir1{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: blue;
+}
+.in-cir2{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: black;}
+.in-cir3{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: blue;}
+.in-cir4{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: black;}
+.in-cir5{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: blue;}
+.in-cir6{
+    /* top: 50%; */
+    /* left: 0%; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;}
+
+.wraper-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 0;
+    z-index: 4;
+    transform: translateX(20%);
+}
+.left-square{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: blue;
+    transform: translateX(90%);
+    z-index: 3;
+}
+
+.left-tri{
+    /* transform: translateX(-20%); */
+    background-color: black;
+    width: 0px;
+    height: 0px;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    border-right: 100px solid blue;
+}
+.wraper-mid{
+    width: 10px;
+    height: 200px;
+    background-color: black;
+    z-index: 5;
+    /* flex: 1 1 0; */
+    
+}
+/* *********************************************************** */
+.wraper-cy{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.ci-le-cy{
+    background-color: black;
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translateX(20%);
+    z-index: 2;
+}
+.rec-cy {
+    background-color: blue;
+    width: 150px;
+    height: 135px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.ci-ri-cy{
+    background-color: black ;
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    transform: translateX(-20%);
+}
+
+.in-rec-cy5 {
+    width: 150px;
+    height: 15px;
+}
+.in-rec-cy4 {
+    width: 150px;
+    height: 45px;
+}
+.in-rec-cy3 {
+    width: 150px;
+    height: 75px;
+}
+
+.in-rec-cy2 {
+    width: 150px;
+    height: 105px;
+}
+.in-rec-cy1 {
+    width: 150px;
+    height: 135px;
+}
+
+
+.yellow {
+    background-color: #F3AC3C;
+    position: absolute;
+
+}
+.black{
+    background-color: black;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
